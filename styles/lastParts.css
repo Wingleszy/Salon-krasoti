@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Oswald-Regular';
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url('../fonts/Oswald-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url(../fonts/Oswald-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url(../fonts/Oswald-Light.ttf);
+    font-weight: lighter;
+}
+
+.section-name {
+    width: 18%;
+    color: #2A3553;
+    margin-left: 12%;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 40px;
+}
+
+.content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.content, .content-gallery {
+    display: flex;
+    margin-top: 69px;
+    color: #2A3553;
+}
+
+.content-gallery {
+    justify-content: center;
+}
+
+.promotion-text {
+    font-size: 48px;
+}
+
+.promotion-content {
+    margin-top: 15px;
+    font-size: 128px;
+}
+
+.btn {
+    margin-top: 25px;
+    font-size: 48px;
+    font-family: 'Oswald-Light';
+    color: white;
+    background-color: #2A3553;
+    border-radius: 20px;
+    padding: 2px 27px 5px;
+}
+
+.btn-wings {
+    margin-top: -7%;
+    width: 39.5%;
+}
+
+.promotion {
+    position: relative;
+}
+
+.wings-bg, .wings-bg-left-sided {
+    width: 51%;
+    position: absolute;
+    filter: brightness(15%);
+}
+
+.wings-bg {
+    top: 3%;
+    right: 0;
+}
+
+.wings-bg-left-sided {
+    bottom: 20%;
+    left: 0;
+    transform: scale(-1, 1);
+}
+
+.underlined {
+    width: 100%;
+}
+
+.gallery {
+    background-color: #FFFFF0;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+
+.slider-img {
+    width: 45%;
+    margin: 0 30px;
+}
+
+.slider-arr {
+    width: 5%;
+}
+
+.slider {
+    width: 65%;
+    display: flex;
+    overflow-x: scroll;
+    transition: .2s ease-in-out all;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contacts-name {
+    padding-top: 1.5%;
+    margin-left: -1.5%;
+    font-size: 48px;
+}
+
+.contacts {
+    padding: 0 11%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.list-info {
+    padding-left: 1%;
+    font-family: 'Oswald-Light';
+    font-size: 32px;
+    padding-bottom: 1%;
+}
+
+.info {
+    margin-left: 3%;
+}
+
+.hypericon {
+    margin-left: 3%;
+}
+
+.footer {
+    padding: 0 11%;
+    background-color: #D9D9D9;
+}
+
+.devs {
+    font-size: 18px;
+    color: #000000;
+    padding: 15px;
+    font-family: 'Oswald-Light';
+}
