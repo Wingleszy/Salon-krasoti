@@ -155,7 +155,7 @@
 .contacts {
     padding: 0 11%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -184,6 +184,7 @@
 .footer {
     padding: 0 11%;
     background-color: #D9D9D9;
+    width: 100%;
 }
 
 .devs {
@@ -191,4 +192,84 @@
     color: #000000;
     padding: 15px;
     font-family: 'Oswald-Light';
+}
+
+.map {
+    width: 36%;
+    margin-bottom: 20px;
+    margin-left: 4%;
+}
+
+.map-field {
+    width: 10px;
+}
+
+section {
+    width: 100%;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container-info {
+    flex: .6 1 20%;
+    padding: 10px;
+}
+
+@media (width < 1000px) {
+    .contacts-info {
+        flex-direction: column-reverse;
+    }
+
+    .promotion-text {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .btn-wings {
+        margin-top: -7%;
+        width: 50%;
+    }
+
+    .btn {
+        font-size: 36px;
+    }
+}
+
+@media (width < 500px) {
+    .contacts-name {
+        font-size: 36px;
+    }
+
+    .underlined {
+        width: 180%;
+    }
+
+    .btn-wings {
+        width: 70%;
+    }
+
+    .btn {
+        font-size: 32px;
+    }
+}
+
+@media (width < 650px) {
+    .promotion-text {
+        font-size: 28px;
+    }
+
+    .promotion-content {
+        font-size: 72px;
+    }
+}
+
+@media (width < 350px) {
+
+    .promotion-content {
+        font-size: 52px;
+    }
 }
