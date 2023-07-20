@@ -13,7 +13,6 @@ incrBtn.addEventListener('click', () => {
         counter = 1260
     }
     slider.scrollLeft = counter
-    console.log(counter);
 })
 
 

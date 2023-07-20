@@ -40,7 +40,8 @@
     align-items: center;
 }
 
-.content, .content-gallery {
+.content,
+.content-gallery {
     display: flex;
     margin-top: 69px;
     color: #2A3553;
@@ -67,6 +68,14 @@
     background-color: #2A3553;
     border-radius: 20px;
     padding: 2px 27px 5px;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    background-color: #4b4545;
 }
 
 .btn-wings {
@@ -78,7 +87,8 @@
     position: relative;
 }
 
-.wings-bg, .wings-bg-left-sided {
+.wings-bg,
+.wings-bg-left-sided {
     width: 51%;
     position: absolute;
     filter: brightness(15%);
@@ -112,6 +122,11 @@
 
 .slider-arr {
     width: 5%;
+    cursor: pointer;
+}
+
+.slider-arr:hover {
+    transform: translateY(2px);
 }
 
 .slider {
@@ -159,6 +174,11 @@
 
 .hypericon {
     margin-left: 3%;
+    cursor: pointer;
+}
+
+.hypericon:hover {
+    transform: translateY(4px);
 }
 
 .footer {
