@@ -26,13 +26,13 @@
 }
 
 .section-name {
-    width: 18%;
+    width: 9%;
     color: #2A3553;
     margin-left: 12%;
     margin-top: 15px;
     text-align: center;
     line-height: 20px;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .content {
@@ -52,17 +52,17 @@
 }
 
 .promotion-text {
-    font-size: 48px;
+    font-size: 38px;
 }
 
 .promotion-content {
     margin-top: 15px;
-    font-size: 128px;
+    font-size: 92px;
 }
 
 .btn {
     margin-top: 25px;
-    font-size: 48px;
+    font-size: 36px;
     font-family: 'Oswald-Light';
     color: white;
     background-color: #2A3553;
@@ -79,8 +79,8 @@
 }
 
 .btn-wings {
-    margin-top: -7%;
-    width: 39.5%;
+    margin-top: -5%;
+    width: 30.5%;
 }
 
 .promotion {
@@ -117,7 +117,7 @@
 }
 
 .slider-img {
-    width: 45%;
+    width: 32%;
     margin: 0 30px;
 }
 
@@ -157,7 +157,7 @@
 .contacts-name {
     padding-top: 1.5%;
     margin-left: -1.5%;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 .contacts {
@@ -184,6 +184,7 @@
 .hypericon {
     margin-left: 3%;
     cursor: pointer;
+    width: 80%;
 }
 
 .hypericon:hover {
@@ -245,6 +246,10 @@ section {
     margin-top: 80px;
 }
 
+.section-contacts img {
+    width: 22%;
+}
+
 @media (width < 1500px) {
     .list-info {
         font-size: 22px;
@@ -252,6 +257,11 @@ section {
 }
 
 @media (width < 1000px) {
+
+    .section-name {
+        font-size: 24px;
+    }
+
     .contacts-info {
         flex-direction: column-reverse;
     }
@@ -275,8 +285,8 @@ section {
     }
 
     .btn-wings {
-        margin-top: -7%;
-        width: 50%;
+        margin-top: -4%;
+        width: 40%;
     }
 
     .btn {
@@ -298,7 +308,7 @@ section {
     }
 
     .btn-wings {
-        width: 70%;
+        width: 54%;
     }
 
     .btn {
@@ -307,6 +317,11 @@ section {
 }
 
 @media (width < 650px) {
+
+    .section-contacts img {
+        width: 40%;
+    }
+
     .promotion-text {
         font-size: 28px;
     }
@@ -314,11 +329,19 @@ section {
     .promotion-content {
         font-size: 72px;
     }
+
+    .section-name {
+        font-size: 18px;
+    }
 }
 
 @media (width < 350px) {
 
     .promotion-content {
         font-size: 52px;
+    }
+
+    .btn-wings {
+        width: 74%;
     }
 }

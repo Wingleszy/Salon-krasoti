@@ -44,8 +44,10 @@ let offset = 0
 
 decrBtn.addEventListener('click', () => {
     offset -= windowWidth
-    if (offset < 0) {
-        offset = window.innerWidth
+    if (offset = 0) {
+        offset = window.innerWidth/ 100 * 80  
+    } else if (offset < 0) {
+        offset = 0 
     }
     slider.style.left = -offset + 'px'
 })
