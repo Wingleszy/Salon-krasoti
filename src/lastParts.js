@@ -23,38 +23,23 @@ if (window.innerWidth > 1800) {
     windowWidth = window.innerWidth * 50 / 100
 }
 
-// incrBtn.addEventListener('click', () => {
-//     counter += windowWidth
-//     if (counter >= window.innerWidth) {
-//         counter = window.innerWidth
-//     }
-//     slider.scrollLeft = counter
-// })
-
-
-// decrBtn.addEventListener('click', () => {
-//     counter -= windowWidth
-//     if (counter <= 0) {
-//         counter = 0
-//     }
-//     slider.scrollLeft = counter
-// })
-
 let offset = 0
 
 decrBtn.addEventListener('click', () => {
-    offset -= windowWidth
-    if (offset = 0) {
-        offset = window.innerWidth/ 100 * 80  
-    } else if (offset < 0) {
-        offset = 0 
+    if (offset !== 0) {
+        offset -= windowWidth
+    }
+    if (offset < 0) {
+        offset = 0
+    } else if (offset == 0) {
+        offset = slider.offsetWidth
     }
     slider.style.left = -offset + 'px'
 })
 
 incrBtn.addEventListener('click', () => {
     offset += windowWidth
-    if (offset > window.innerWidth) {
+    if (offset > slider.offsetWidth) {
         offset = 0
     }
     slider.style.left = -offset + 'px'
